@@ -10,10 +10,8 @@ int i, j;
 sem_t mutex;
 void *funcao(void *param );
 void *funcao2(void *param );
-
 	
 int main(){
-
 	pthread_t threads[2];
 	sem_init(&mutex, 0,1);
 	
@@ -27,7 +25,6 @@ int main(){
 		
 		printf("%lf\n",sum * 4);
 	}
-	
 	return(0);
 }
 
